@@ -1,0 +1,38 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 14px;
+  color: $text-color;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $main-font;
+  background-color: $light-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

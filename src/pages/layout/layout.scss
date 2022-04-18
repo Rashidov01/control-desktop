@@ -1,0 +1,22 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.page-container{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar-bar{
+  min-width: 18%;
+}
+
+.main-page{
+  min-width: 82%;
+}
+
+.main{
+  padding: 24px 0;
+  height: 100vh;
+  background-color: #EBEFF2;
+}

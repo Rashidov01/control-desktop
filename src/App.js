@@ -1,20 +1,29 @@
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./sass/main.scss";
+import {
+  Layout,
+  Home,
+  Employees,
+  Guests,
+  Login,
+  Report,
+  Settings,
+  Work,
+} from "./pages";
 
 function App() {
   return (
-    // <Routes>
-    //     <Route index element={<Home />} />
-    //   <Route path="/" element={<Layout />}>
-    //     <Route path="about" element={<About />} />
-    //     <Route path="Catalog" element={<Catalog />} />
-    //     <Route path="Store" element={<Store />} />
-    //     <Route path="Contact" element={<Contact />} />
-    //     <Route path="CardOpen" element={<CardOpen />} />
-    //     <Route path="BlogOpen" element={<BlogOpen />} />
-    //   </Route>
-    // </Routes>
-    <h1>home</h1>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="employees" element={<Employees />} />
+        <Route path="guests" element={<Guests />} />
+        <Route path="login" element={<Login />} />
+        <Route path="report" element={<Report />} />
+        <Route path="settings" element={<Settings />} />
+        <Route path="work" element={<Work />} />
+      </Route>
+    </Routes>
   );
 }
 

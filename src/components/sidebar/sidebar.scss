@@ -1,0 +1,96 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.sidebar {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar__head {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.head-sidebar {
+  border-bottom: 1px solid $border-color;
+  padding: 24px 18px;
+}
+
+.head-sidebar__title {
+  font-weight: 400;
+  color: $blue-color;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+// .sidebar-main {
+//   padding: 24px;
+// }
+
+.sidebar-entrance {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.sidebar-entrance__logo {
+  margin-right: 16px;
+}
+
+.sidebar-entrance__img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.sidebar-entrance__detail-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.sidebar-entrance__detail-text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: $light-grey-color;
+}
+
+.sidebar-list {
+  @include list-unstyled;
+  border-bottom: 1px solid $border-color;
+}
+
+.sidebar-list__item {
+  display: flex;
+  align-items: center;
+  transition: all ease 0.4s;
+
+  &:hover {
+    transition: all ease 0.4s;
+    background-color: #f6f6f6;
+  }
+}
+
+.sidebar-list__item:hover .sidebar-list__link,
+.sidebar-list__item:hover .sidebar-list__icon {
+  color: $blue-color;
+}
+
+.sidebar-list__link {
+  padding: 18px 0;
+  display: flex;
+  width: 100%;
+  color: $text-color;
+  text-decoration: none;
+}
+
+.sidebar-list__icon {
+  padding-left: 24px;
+  margin-right: 16px;
+  font-size: 16px;
+  color: $icon-color;
+}
