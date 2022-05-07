@@ -53,6 +53,12 @@ export default function Sidebar() {
             </Link>
           </li>
         </ul>
+        <div className="sidebar-list__item">
+          <i class="sidebar-list__icon bx bx-cog"></i>
+          <Link to="/Settings" className="sidebar-list__link">
+            Settings
+          </Link>
+        </div>
       </div>
     </div>
   );
